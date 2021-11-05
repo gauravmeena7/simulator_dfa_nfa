@@ -1,0 +1,41 @@
+# DFA_NFA_Simulator
+
+The exercise is on developing a generic, table driven lexical analyzer to verify the given input string against the NFA/DFA represented in a table. Please refer to our discussion in last class for NFA/DFA simulator.
+
+Our lexical analyzer should be named as mylex and should take the following intput as command line arguments.
+
+	-> dfa 1 for dfa 0 for nfa
+	-> number of states
+	-> number of final states
+	-> number of input symbols(i.e. alphabet size)
+
+If other than given input are given as input than the program is terminated
+
+While reading the specification file
+	reading table we don't read the first row and first char of each row
+
+INPUT:
+	Input is read from a file named input.txt
+
+OUTPUT:
+	Output is printed to screen as MATCHED( if matches) and ERROR (if not matches)
+
+
+Lex program file :	source.l
+executable file	 :	mylex
+input file	 :	input.txt
+specification file:	specification.txt
+
+dependent file	:	stack.h stack.c
+
+-> Just run the following command to make an executable file
+	make
+
+-> To clean the unnecessary file run the following command
+	make clean
+
+-> To run the executable file type follwing command (note that exe file is present in the directory.)
+	./mylex (nfa) (number of state) (number of final state) (number of input symbols)
+
+
+
